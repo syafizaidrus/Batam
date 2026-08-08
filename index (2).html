@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percutian Batam · 19–21 Sept 2026</title>
+<meta name="description" content="Itinerary percutian Batam, 3 hari 2 malam, 19-21 September 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ocean-deep:#0A2E36;
+    --ocean-mid:#123F47;
+    --ocean-soft:#17505A;
+    --teal-bright:#2FA6A0;
+    --coral:#FF6B4A;
+    --gold:#E8A33D;
+    --sand:#F4EAD8;
+    --paper:#FBF6EC;
+    --ink:#0A2E36;
+    --hair:rgba(244,234,216,0.16);
+    --hair-strong:rgba(244,234,216,0.3);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ocean-deep);
+    color:var(--paper);
+    font-family:'Work Sans',sans-serif;
+    font-size:16px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    margin:0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .mono{
+    font-family:'IBM Plex Mono',monospace;
+    letter-spacing:0.02em;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+
+  .wrap{
+    max-width:960px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    padding:72px 0 0;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(47,166,160,0.25), transparent 55%),
+      radial-gradient(circle at 90% 10%, rgba(232,163,61,0.12), transparent 45%),
+      linear-gradient(180deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:7px;height:7px;
+    border-radius:50%;
+    background:var(--gold);
+    display:inline-block;
+  }
+  .hero h1{
+    font-size:clamp(2.6rem, 6vw, 4.4rem);
+    color:var(--paper);
+    max-width:11ch;
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--coral);
+    font-weight:500;
+  }
+  .hero-sub{
+    margin-top:16px;
+    max-width:46ch;
+    color:rgba(251,246,236,0.72);
+    font-size:1.05rem;
+  }
+  .hero-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:32px;
+  }
+  .pill{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    padding:10px 16px;
+    border:1px solid var(--hair-strong);
+    border-radius:100px;
+    font-size:13px;
+    background:rgba(251,246,236,0.04);
+  }
+  .pill .val{
+    font-family:'IBM Plex Mono',monospace;
+    color:var(--sand);
+    font-weight:500;
+  }
+  .pill .lbl{
+    color:rgba(251,246,236,0.55);
+  }
+
+  /* ferry route strip */
+  .route{
+    position:relative;
+    margin-top:56px;
+    padding:26px 0 90px;
+  }
+  .route-labels{
+    display:flex;
+    justify-content:space-between;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    color:var(--sand);
+    margin-bottom:14px;
+  }
+  .route-labels span small{
+    display:block;
+    color:rgba(251,246,236,0.5);
+    font-size:11px;
+    margin-top:2px;
+  }
+  .route-track{
+    position:relative;
+    height:2px;
+    background:repeating-linear-gradient(90deg, var(--hair-strong) 0 8px, transparent 8px 16px);
+  }
+  .route-track::before,
+  .route-track::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:9px;height:9px;
+    border-radius:50%;
+    background:var(--coral);
+    transform:translateY(-50%);
+  }
+  .route-track::before{ left:-3px; }
+  .route-track::after{ right:-3px; }
+  .boat{
+    position:absolute;
+    top:-11px;
+    left:0;
+    animation:sail 7s ease-in-out infinite;
+  }
+  .boat svg{ display:block; width:26px; height:26px; }
+  @keyframes sail{
+    0%{ left:0%; transform:translateX(0) rotate(0deg); }
+    48%{ left:100%; transform:translateX(-100%) rotate(0deg); }
+    50%{ left:100%; transform:translateX(-100%) rotate(180deg); }
+    98%{ left:0%; transform:translateX(0) rotate(180deg); }
+    100%{ left:0%; transform:translateX(0) rotate(0deg); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .boat{ animation:none; left:38%; }
+  }
+  .route-note{
+    margin-top:14px;
+    font-size:12.5px;
+    color:rgba(251,246,236,0.45);
+  }
+
+  .wave{
+    display:block;
+    width:100%;
+    height:auto;
+    margin-top:-2px;
+  }
+
+  /* ---------- SECTION HEADS ---------- */
+  section{ padding:64px 0; }
+  .section-head{
+    margin-bottom:34px;
+  }
+  .section-head .eyebrow{ color:var(--teal-bright); }
+  .section-head .eyebrow::before{ background:var(--teal-bright); }
+  .section-head h2{
+    font-size:clamp(1.7rem, 3.4vw, 2.3rem);
+    color:var(--paper);
+  }
+
+  /* ---------- ESSENTIALS ---------- */
+  .essentials{
+    background:var(--ocean-mid);
+  }
+  .card-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:18px;
+  }
+  .card{
+    background:var(--sand);
+    color:var(--ink);
+    border-radius:16px;
+    padding:26px 24px;
+  }
+  .card .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--ocean-soft);
+    opacity:0.75;
+  }
+  .card h3{
+    font-size:1.25rem;
+    margin-top:8px;
+    color:var(--ink);
+  }
+  .card p{
+    margin:10px 0 0;
+    font-size:14.5px;
+    color:rgba(10,46,54,0.75);
+  }
+  .card ul{
+    margin:12px 0 0;
+    padding:0;
+    list-style:none;
+  }
+  .card li{
+    font-size:14px;
+    padding:6px 0;
+    border-top:1px solid rgba(10,46,54,0.1);
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+  }
+  .card li:first-child{ border-top:none; }
+  .card li .k{ color:rgba(10,46,54,0.55); }
+  .card li .v{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    text-align:right;
+  }
+
+  .package-strip{
+    margin-top:22px;
+    border-radius:16px;
+    background:linear-gradient(120deg, rgba(255,107,74,0.14), rgba(232,163,61,0.1));
+    border:1px solid rgba(255,107,74,0.35);
+    padding:22px 24px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+  }
+  .package-price{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .package-price .num{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:2.1rem;
+    color:var(--coral);
+  }
+  .package-price .per{
+    font-size:13px;
+    color:rgba(251,246,236,0.6);
+  }
+  .inc-exc{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    max-width:560px;
+  }
+  .chip{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    padding:6px 10px;
+    border-radius:100px;
+    background:rgba(251,246,236,0.06);
+    border:1px solid var(--hair);
+    color:rgba(251,246,236,0.85);
+  }
+  .chip.out{
+    color:rgba(251,246,236,0.45);
+    text-decoration:line-through;
+    border-color:transparent;
+    background:transparent;
+  }
+
+  /* ---------- DAY TIMELINE ---------- */
+  .day{
+    padding:56px 0;
+    border-top:1px solid var(--hair);
+  }
+  .day-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:8px;
+  }
+  .day-num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+  .day-date{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    color:rgba(251,246,236,0.5);
+  }
+  .day h2{
+    font-size:clamp(1.6rem, 3.2vw, 2.15rem);
+    margin-top:6px;
+    color:var(--paper);
+  }
+  .day-note{
+    margin-top:12px;
+    font-size:14px;
+    color:rgba(251,246,236,0.55);
+    max-width:56ch;
+    border-left:2px solid var(--teal-bright);
+    padding-left:12px;
+  }
+
+  .timeline{
+    margin-top:34px;
+    position:relative;
+  }
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:76px;
+    top:6px;
+    bottom:6px;
+    width:1px;
+    background:var(--hair-strong);
+  }
+  .stop{
+    position:relative;
+    display:grid;
+    grid-template-columns:76px 1fr;
+    gap:22px;
+    padding:16px 0;
+  }
+  .stop-time{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    color:var(--sand);
+    padding-top:2px;
+    text-align:right;
+  }
+  .stop-dot{
+    position:absolute;
+    left:71px;
+    top:20px;
+    width:11px;height:11px;
+    border-radius:50%;
+    background:var(--ocean-deep);
+    border:2px solid var(--dot-color, var(--teal-bright));
+  }
+  .stop-body{
+    padding-left:22px;
+  }
+  .stop-cat{
+    display:inline-block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:0.09em;
+    text-transform:uppercase;
+    padding:3px 9px;
+    border-radius:100px;
+    color:var(--cat-color, var(--teal-bright));
+    border:1px solid var(--cat-color, var(--teal-bright));
+    margin-bottom:8px;
+  }
+  .stop-title{
+    font-family:'Fraunces',serif;
+    font-size:1.15rem;
+    font-weight:600;
+    color:var(--paper);
+  }
+  .stop-desc{
+    margin-top:4px;
+    font-size:14px;
+    color:rgba(251,246,236,0.62);
+    max-width:52ch;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding:48px 0 64px;
+    border-top:1px solid var(--hair);
+  }
+  footer .foot-grid{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:24px;
+  }
+  footer h3{
+    font-size:1rem;
+    color:var(--sand);
+    margin-bottom:10px;
+  }
+  footer p, footer li{
+    font-size:13.5px;
+    color:rgba(251,246,236,0.55);
+  }
+  footer ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:grid;
+    gap:6px;
+  }
+  footer .credit{
+    margin-top:36px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    color:rgba(251,246,236,0.35);
+  }
+
+  @media (max-width: 720px){
+    .card-grid{ grid-template-columns:1fr; }
+    .package-strip{ flex-direction:column; align-items:flex-start; }
+    .timeline::before{ left:58px; }
+    .stop{ grid-template-columns:58px 1fr; gap:14px; }
+    .stop-dot{ left:53px; }
+    .stop-time{ font-size:12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">3 Hari · 2 Malam</div>
+    <h1>Percutian<br><em>Batam</em></h1>
+    <p class="hero-sub">Bertolak dari Puteri Harbour, seberang ke Harbour Bay — tiga hari santai di Batam bersama keluarga, dari Jembatan Barelang sampai Puncak Beliung.</p>
+    <div class="hero-meta">
+      <div class="pill"><span class="val">19–21 Sept 2026</span><span class="lbl">tarikh</span></div>
+      <div class="pill"><span class="val">RM600</span><span class="lbl">/ pax</span></div>
+      <div class="pill" id="countdown-pill"><span class="val" id="countdown-val">—</span><span class="lbl" id="countdown-lbl">sebelum belayar</span></div>
+    </div>
+
+    <div class="route">
+      <div class="route-labels">
+        <span>PUTERI HARBOUR<small>Johor · bertolak 09:00 MYT</small></span>
+        <span style="text-align:right">HARBOUR BAY<small>Batam · tiba ~09:00 WIB</small></span>
+      </div>
+      <div class="route-track">
+        <div class="boat">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 15h18l-2 4H5l-2-4Z" fill="#FF6B4A"/><path d="M6 15l1-6h10l1 6" stroke="#FBF6EC" stroke-width="1.2"/><path d="M12 9V3" stroke="#FBF6EC" stroke-width="1.2"/><path d="M12 3l5 3-5 1.5V3Z" fill="#FBF6EC"/></svg>
+        </div>
+      </div>
+      <div class="route-note mono">Putri Anggreni Ferry · lebih kurang 1 jam perjalanan</div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path d="M0,32 C240,60 480,4 720,32 C960,60 1200,4 1440,32 L1440,60 L0,60 Z" fill="#123F47"/>
+  </svg>
+</div>
+
+<section class="essentials">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Butiran Perjalanan</div>
+      <h2>Apa yang sudah diatur</h2>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="tag">Feri</div>
+        <h3>Putri Anggreni Ferry</h3>
+        <p>Puteri Harbour Int'l Ferry Terminal → Harbour Bay Ferry Terminal</p>
+        <ul>
+          <li><span class="k">Bertolak</span><span class="v">19 Sept · 09:00 MYT</span></li>
+          <li><span class="k">Tiba</span><span class="v">19 Sept · ~09:00 WIB</span></li>
+          <li><span class="k">Tempoh</span><span class="v">~1 jam</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="tag">Hotel</div>
+        <h3>Batam Harbour Boutique Hotel &amp; Spa</h3>
+        <p>Dalam kompleks Harbour Bay · sarapan termasuk untuk kedua-dua bilik</p>
+        <ul>
+          <li><span class="k">Bilik 1</span><span class="v">Family Suite</span></li>
+          <li><span class="k">Bilik 2</span><span class="v">Deluxe Balcony</span></li>
+          <li><span class="k">Check-in / out</span><span class="v">19 Sept / 21 Sept</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="tag">Transport &amp; Guide</div>
+        <h3>Driver merangkap guide</h3>
+        <p>Bersama sepanjang 3 hari penuh di Batam, dari ketibaan hingga balik ke feri.</p>
+        <ul>
+          <li><span class="k">Liputan</span><span class="v">3 hari penuh</span></li>
+          <li><span class="k">Land transport</span><span class="v">Termasuk</span></li>
+          <li><span class="k">Insurans</span><span class="v">Termasuk</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="package-strip">
+      <div class="package-price">
+        <span class="num">RM600</span>
+        <span class="per">per pax · Package BATAM</span>
+      </div>
+      <div class="inc-exc">
+        <span class="chip">Feri 2-hala JB–Batam</span>
+        <span class="chip">Port tax</span>
+        <span class="chip">Hotel + sarapan</span>
+        <span class="chip">Lunch &amp; dinner</span>
+        <span class="chip">Land transport</span>
+        <span class="chip">Travel insurance</span>
+        <span class="chip out">Tiket lawatan/atraksi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <div class="day" id="hari-1">
+    <div class="day-head">
+      <div>
+        <div class="day-num">Hari 1 / 3</div>
+        <h2>Ketibaan + Kawasan Timur</h2>
+      </div>
+      <div class="day-date mono">Sabtu, 19 September 2026</div>
+    </div>
+
+    <div class="timeline" data-day="1"></div>
+  </div>
+
+  <div class="day" id="hari-2">
+    <div class="day-head">
+      <div>
+        <div class="day-num">Hari 2 / 3</div>
+        <h2>Dino's Gate + Ocarina</h2>
+      </div>
+      <div class="day-date mono">Ahad, 20 September 2026</div>
+    </div>
+    <p class="day-note">Semua tempat hari ini dalam kawasan Bengkong/Sadai — sangat dekat dengan Harbour Bay (~20 min). Hari ini lebih santai berbanding sebelum ini.</p>
+
+    <div class="timeline" data-day="2"></div>
+  </div>
+
+  <div class="day" id="hari-3">
+    <div class="day-head">
+      <div>
+        <div class="day-num">Hari 3 / 3</div>
+        <h2>Puncak Beliung + Welcome to Batam + Balik</h2>
+      </div>
+      <div class="day-date mono">Isnin, 21 September 2026</div>
+    </div>
+
+    <div class="timeline" data-day="3"></div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Sebelum bertolak</h3>
+        <ul>
+          <li>18 Sept — bergerak dari Ruby ke Johor (Pasir Gudang)</li>
+          <li>Hari 3: bawa bagasi sekali semasa sarapan awal</li>
+          <li>Bawa dokumen perjalanan &amp; wang WIB secukupnya</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Nota mesra keluarga</h3>
+        <ul>
+          <li>Rehat petang Hari 1 disediakan untuk warga emas &amp; kanak-kanak</li>
+          <li>Puncak Beliung &amp; Masjid Raja Hamidah — flat, senang untuk warga emas</li>
+          <li>Dino's Gate &amp; Rabbit Garden — sesuai untuk kanak-kanak</li>
+        </ul>
+      </div>
+    </div>
+    <div class="credit">ITINERARY PERCUTIAN BATAM · 3H2M · 19–21 SEPT 2026</div>
+  </div>
+</footer>
+
+<script>
+  const CAT_COLORS = {
+    feri:      "#2FA6A0",
+    checkin:   "#E8A33D",
+    makan:     "#FF6B4A",
+    aktiviti:  "#E8A33D",
+    rehat:     "#8FA6A6",
+    shopping:  "#2FA6A0",
+    foto:      "#FF6B4A"
+  };
+  const CAT_LABEL = {
+    feri: "Feri", checkin: "Check-in", makan: "Makan",
+    aktiviti: "Aktiviti", rehat: "Rehat", shopping: "Shopping", foto: "Foto & Golden Hour"
+  };
+
+  const DAYS = {
+    1: [
+      { time:"09:00", cat:"feri", title:"Bertolak dari Puteri Harbour", desc:"Putri Anggreni Ferry" },
+      { time:"~10:00", cat:"feri", title:"Tiba Harbour Bay Ferry Terminal", desc:"Imigresen & jumpa driver" },
+      { time:"10:30", cat:"checkin", title:"Check-in Batam Harbour Hotel", desc:"Family Suite + Deluxe Balcony" },
+      { time:"11:30", cat:"makan", title:"Coffee & pastri ringan", desc:"Mula Patisserie" },
+      { time:"13:00", cat:"makan", title:"Lunch", desc:"RM Ranah Minang — nasi Padang, sesuai semua umur" },
+      { time:"14:30", cat:"rehat", title:"Rehat di hotel", desc:"Penting lepas perjalanan pagi — warga emas & kanak-kanak" },
+      { time:"16:00", cat:"shopping", title:"Harbour Bay Mall", desc:"Shopping santai, dalam kompleks hotel — tak perlu jauh" },
+      { time:"17:30", cat:"foto", title:"Jembatan Barelang", desc:"OOTD & golden hour, senang untuk warga emas" },
+      { time:"19:30", cat:"makan", title:"Dinner seafood", desc:"Nada Seafood" },
+      { time:"21:00", cat:"rehat", title:"Balik hotel, rehat", desc:"" }
+    ],
+    2: [
+      { time:"08:00", cat:"makan", title:"Sarapan hotel", desc:"" },
+      { time:"09:30", cat:"aktiviti", title:"Dino's Gate", desc:"Spot foto dino — best untuk kanak-kanak & OOTD" },
+      { time:"11:00", cat:"makan", title:"Lunch berdekatan", desc:"" },
+      { time:"13:00", cat:"aktiviti", title:"Ocarina", desc:"Giant Wheel, playground & pantai — santai petang, banyak sudut OOTD" },
+      { time:"18:30", cat:"foto", title:"Sunset tepi pantai Ocarina", desc:"" },
+      { time:"19:30", cat:"makan", title:"Dinner seafood", desc:"Golden Prawn (kawasan Bengkong/Sadai)" }
+    ],
+    3: [
+      { time:"06:30", cat:"checkin", title:"Sarapan awal + check-out", desc:"Bawa bagasi" },
+      { time:"07:00", cat:"aktiviti", title:"Bertolak ke Puncak Beliung, Sekupang", desc:"~45–60 min perjalanan" },
+      { time:"08:00", cat:"aktiviti", title:"Puncak Beliung", desc:"Tangga Langit, Rabbit Garden (kanak-kanak), udara sejuk" },
+      { time:"10:30", cat:"foto", title:"Masjid Agung Raja Hamidah + \u201cWelcome to Batam\u201d", desc:"OOTD megah, flat & senang untuk warga emas — spot foto ikon di sebelah masjid" },
+      { time:"12:00", cat:"makan", title:"Lunch", desc:"" },
+      { time:"13:30", cat:"shopping", title:"Grand Batam Mall", desc:"Shopping santai" },
+      { time:"14:30", cat:"shopping", title:"Morning Bakery / Maru Bake Cafe", desc:"Oleh-oleh — lapis Batam terkenal" },
+      { time:"15:30", cat:"feri", title:"Bertolak ke Harbour Bay Ferry Terminal", desc:"" },
+      { time:"16:00", cat:"feri", title:"Check-in feri, bertolak balik Puteri Harbour", desc:"" }
+    ]
+  };
+
+  document.querySelectorAll(".timeline").forEach(container => {
+    const dayNum = container.getAttribute("data-day");
+    const stops = DAYS[dayNum] || [];
+    container.innerHTML = stops.map(s => `
+      <div class="stop">
+        <div class="stop-time">${s.time}</div>
+        <div class="stop-dot" style="--dot-color:${CAT_COLORS[s.cat]}"></div>
+        <div class="stop-body">
+          <span class="stop-cat" style="--cat-color:${CAT_COLORS[s.cat]}">${CAT_LABEL[s.cat]}</span>
+          <div class="stop-title">${s.title}</div>
+          ${s.desc ? `<div class="stop-desc">${s.desc}</div>` : ``}
+        </div>
+      </div>
+    `).join("");
+  });
+
+  // Countdown to departure: 19 Sept 2026, 09:00 MYT (UTC+8)
+  const departure = new Date("2026-09-19T09:00:00+08:00");
+  const valEl = document.getElementById("countdown-val");
+  const lblEl = document.getElementById("countdown-lbl");
+
+  function updateCountdown(){
+    const now = new Date();
+    const diff = departure - now;
+
+    if (diff <= 0){
+      const returned = new Date("2026-09-21T16:00:00+07:00");
+      if (now < returned){
+        valEl.textContent = "Sedang bercuti";
+        lblEl.textContent = "selamat percutian!";
+      } else {
+        valEl.textContent = "Selesai";
+        lblEl.textContent = "percutian sudah tamat";
+      }
+      return;
+    }
+
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+
+    if (days > 0){
+      valEl.textContent = `${days} hari ${hours} jam`;
+    } else {
+      const mins = Math.floor((diff % 3600000) / 60000);
+      valEl.textContent = `${hours} jam ${mins} min`;
+    }
+    lblEl.textContent = "sebelum belayar";
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 60000);
+</script>
+
+</body>
+</html>
